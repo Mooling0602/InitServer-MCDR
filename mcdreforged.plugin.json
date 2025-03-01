@@ -1,0 +1,16 @@
+{
+    "id": "init_server",
+    "version": "0.1.0",
+    "name": "InitServer",
+    "description": {
+        "en_us": "Init your Minecraft server with MCDReforged quickly.",
+        "zh_cn": "在MCDR下快速初始化你的MC服务器。"
+    },
+    "dependencies": {
+        "mcdreforged": ">=2.1.0"
+    },
+    "author": "Mooling0602",
+    "link": "https://github.com/Mooling0602/InitServer-MCDR",
+    "entrypoint": "init_server.entry",
+    "resources": ["lang", "resources"]
+}

@@ -1,0 +1,35 @@
+init_server:
+  config_not_enabled:
+    auto_agree_eula: 插件的EULA自动同意功能未启用！
+    auto_set_rcon: 插件的Rcon自动设置功能未启用！
+  control_tips:
+    a: 有尚未处理完成的初始化任务，现在提供一些快捷指令：
+    b: 使用!stop在初始化任务未完成前直接完全退出MCDR，
+    c: 使用!start直接重新启动服务器
+    d: 注：使用以上命令将直接离开初始化阶段，此后以上指令将不再可用，除非你在配置中将它们启用。
+  set_rcon_tips:
+    a: 你没有启用插件的Rcon自动设置功能，可以现在通过命令启用
+    b: 命令用法：!!rcon auto-set enable
+    c: 也可以使用简化命令：!set-rcon
+  agree_eula_tips:
+    a: 你没有启用插件的EULA自动同意功能，可以现在通过命令启用
+    b: 命令用法：!!eula auto-set enable
+    c: 也可以使用简化命令：!set-eula
+  on_server_init: 检测到服务端和插件都是首次启动，开始自动初始化服务器
+  on_init_apply: 所有初始化任务已全部完成，开始自动重新启动服务器并重新加载插件！
+  on_server_crash: 检测到服务端崩溃，初始化任务取消！
+  on_init_complete: 初始化任务已经全部启用并生效，你可以专注于其他工作了！
+  wait_for_init_plz: 将自动为你同意EULA并设置好Rcon，只需坐和放宽~
+  agree_eula: 正在同意Minecraft EULA，将写入相关的服务端配置文件！
+  apply_mcdr_rcon_config: 正在应用MCDR的Rcon配置……
+  disagree_eula: 正在拒绝Minecraft EULA，将写入相关的服务端配置文件！
+  execute_in_console_please: 请在控制台执行此命令！
+  no_need_to_init_rcon: MCDR的Rcon已在正常工作，无需进行配置～
+  please_enable_auto_set_rcon: 请手动启用插件的auto_set_rcon配置项以自动配置Rcon，也可以使用指令启用或着通过指令参数手动进行设置。
+  set_eula_success: 成功同意了EULA，若未生效需要重启服务器以刷新配置。
+  start_rcon_set_task: 正在开始自动设置Rcon……
+  rcon_manager:
+    on_init: "Rcon配置管理器已注册！配置源：{config_source}"
+  do_restart_server: 设置完成！手动重启服务器后生效。
+  init_process: "设置完成！当前已完成初始化任务：{process}"
+  init_tip: 所有初始化任务完成后将自动重新启动服务器。

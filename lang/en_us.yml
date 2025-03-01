@@ -1,0 +1,35 @@
+init_server:
+  config_not_enabled:
+    auto_agree_eula: The plugin's auto-agree EULA feature is not enabled!
+    auto_set_rcon: The plugin's auto-set Rcon feature is not enabled!
+  control_tips:
+    a: "There are unfinished initialization tasks, here are some quick commands: "
+    b: Use stop to completely exit MCDR before initialization tasks are completed,
+    c: Use start to directly restart the server
+    d: "Note: Using the above commands will directly exit the initialization phase, and the above commands will no longer be available unless you enable them in the configuration."
+  set_rcon_tips:
+    a: You have not enabled the plugin's auto-set Rcon feature, you can enable it now via command
+    b: "Command usage: rcon auto-set enable"
+    c: "You can also use the simplified command: set-rcon"
+  agree_eula_tips:
+    a: You have not enabled the plugin's auto-agree EULA feature, you can enable it now via command
+    b: "Command usage: eula auto-set enable"
+    c: "You can also use the simplified command: set-eula"
+  on_server_init: Detected that both the server and the plugin are starting for the first time, starting automatic server initialization
+  on_init_apply: All initialization tasks are completed, starting automatic server restart and reloading the plugin!
+  on_server_crash: Server crash detected, initialization tasks canceled!
+  on_init_complete: All initialization tasks have been enabled and are effective, you can focus on other work now!
+  wait_for_init_plz: EULA will be automatically agreed and Rcon will be set up for you, just sit back and relax
+  agree_eula: Agreeing to the Minecraft EULA, writing to the server configuration file!
+  apply_mcdr_rcon_config: Applying MCDR's Rcon configuration...
+  disagree_eula: Disagreeing with the Minecraft EULA, writing to the server configuration file!
+  execute_in_console_please: Please execute this command in the console!
+  no_need_to_init_rcon: MCDR's Rcon is already working properly, no need to configure it~
+  please_enable_auto_set_rcon: Please manually enable the plugin's auto_set_rcon configuration item to automatically configure Rcon, or you can enable it via command or manually set it via command parameters.
+  set_eula_success: Successfully agreed to the EULA, if it does not take effect, restart the server to refresh the configuration.
+  start_rcon_set_task: Starting automatic Rcon setup...
+  rcon_manager:
+    on_init: "Rcon configuration manager registered! Configuration source: {config_source}"
+  do_restart_server: Setup complete! Restart the server manually for it to take effect.
+  init_process: "Setup complete! Current completed initialization tasks: {process}"
+  init_tip: The server will automatically restart after all initialization tasks are completed.
