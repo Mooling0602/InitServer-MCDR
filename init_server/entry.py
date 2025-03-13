@@ -23,7 +23,7 @@ def on_load(server: PluginServerInterface, prev_module):
     if on_server_init and data.config == default_config:
         server.logger.info(server.rtr("init_server.on_server_init"))
         server.logger.info(server.rtr("init_server.wait_for_init_plz"))
-    if server.get_mcdr_language != 'zh_cn':
+    if server.get_mcdr_language() != 'zh_cn':
         server.logger.warning("English is all translated from Chinese Simplified by Copilot in VSCode.")
     load_task(server) # 加载初始化/自动任务
     register_command(server) # 注册命令
